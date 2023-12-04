@@ -97,7 +97,7 @@ For iBDD-SR, we have
 - $w^{(0 \to 19)}=$ 4.10 4.52 4.99 5.62 6.50 7.56 8.55 9.37 10.03 10.57 11.03 11.43 11.78 12.09 12.37 12.62 12.86 13.07 13.28 13.47
 
 #### The PC with (256,239,2) BCH code
-We finally present the below figure the simulation results of both TB-BMP-1 and TB-BMP-2 with $T_{\mathrm{opt}}^{(1)} = T_{\mathrm{opt}}^{(2)} = 3.0$ for the PC based on (256,239,2) extended BCH code. In this case, the component code is an extended BCH code whose the weight enumerator is different from that of component code without extended bit. For simplicity, parameters of both TB-BMP-1 and TB-BMP-2 are selected based on the DE of EMP-based TB-BMP-2 with (256,239,2) BCH code.
+We finally present the below figure the simulation results of both TB-BMP-1 and TB-BMP-2 with $T_{\mathrm{opt}}^{(1)} = T_{\mathrm{opt}}^{(2)} = 3.0$ for the PC based on (256,239,2) extended BCH code. In this case, the component code is an extended BCH code whose the weight enumerator is different from that of component code without extended bit. For simplicity, parameters of both TB-BMP-1 and TB-BMP-2 are selected based on the DE of EMP-based TB-BMP-2 with (255,239,2) BCH code.
 <p align="center">
 <img width="600px" src="figures/sim_256.png">
 </p>
@@ -108,3 +108,9 @@ For both $T_{\mathrm{opt}}^{(1)} = T_{\mathrm{opt}}^{(2)} = 3.0$, we have
 
 For iBDD-SR, we have
 - $w^{(0 \to 19)}=$ 4.10 4.52 4.99 5.62 6.50 7.56 8.55 9.37 10.03 10.57 11.03 11.43 11.78 12.09 12.37 12.62 12.86 13.07 13.28 13.47
+
+## License
+The codes in this repository are under the MIT license as specified by the LICENSE file.
+
+## Notes
+The work on TB-BMP has been submitted to IEEE Transactions on Communications and is in "under review" status. If you are interested in this work, please contact me at zhaoxw9@mail2.sysu.edu.cn.
