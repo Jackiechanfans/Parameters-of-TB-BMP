@@ -8,7 +8,7 @@ The TB-BMP is a modification of [iBDD-SR](https://ieeexplore.ieee.org/abstract/d
 <img width="1000px" src="figures/TB_BMP.png">
 </p>
 
-The above figure shows the block diagram of TB-BMP at half-iteration $\ell$. Here, $w^{(\ell)}$ is a scaling factor which can be obtained via density evolution (DE) of TB-BMP, $L$ is the value of log-likehood ratio (LLR), and the soft reliability $u^{(\ell)}$ is given as $$u^{(\ell)} = w^{(\ell)} \bar{u}^{(\ell)} + \beta^{(\ell-1)}w^{(\ell)}B^{(\ell-1)} + L.$$ 
+The above figure shows the block diagram of TB-BMP at half-iteration $\ell$. Here, $w^{(\ell)}$ and $\beta^{(\ell-1)}w^{(\ell)}$ are scaling factors which can be obtained via density evolution (DE) of TB-BMP, $L$ is the value of log-likehood ratio (LLR), and the soft reliability $u^{(\ell)}$ is given as $$u^{(\ell)} = w^{(\ell)} \bar{u}^{(\ell)} + \beta^{(\ell-1)}w^{(\ell)}B^{(\ell-1)} + L.$$ 
 
 ### TB-BMP-1
 The value of $B^{(\ell)}$ is a function of the value of $u^{(\ell)}$, the BDD output $\bar{u}^{(\ell)}$, and the flipping threshold $T$. 
