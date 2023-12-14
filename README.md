@@ -37,7 +37,7 @@ where
 $$f^c(x,p_{\mathrm{ch}}) = \sum_{j=0}^{n-1} \binom{n-1}{j} (x)^{j} (1-x)^{n-j-1} \times \Bigl( p_{\mathrm{ch}}P^c(j) + (1-p_{\mathrm{ch}})Q^c(j) \Bigr) $$
 and
 $$f^e(x,p_{\mathrm{ch}}) = \sum_{j=0}^{n-1} \binom{n-1}{j} (x)^{j} (1-x)^{n-j-1} \times \Bigl( p_{\mathrm{ch}}P^e(j) + (1-p_{\mathrm{ch}})Q^e(j) \Bigr).$$
-Here, $P_{\mathrm{ch}}$ is the error probability of the channel ouput and $P^c(j)$, $Q^c(j)$, $P^e(j)$, and $Q^e(j)$ can be found in the [paper](https://ieeexplore.ieee.org/abstract/document/8832202) of iBDD-SR.
+Here, $p_{\mathrm{ch}}$ is the error probability of the channel ouput and $P^c(j)$, $Q^c(j)$, $P^e(j)$, and $Q^e(j)$ can be found in the [paper](https://ieeexplore.ieee.org/abstract/document/8832202) of iBDD-SR.
 
 ### The calculation of $\beta^{(\ell)}$
 We impose the constraint that $0 \leq \beta^{(\ell)} < 1$. Particularly, for a fixed $T$, the parameter $\beta^{(\ell)}$ is given as
