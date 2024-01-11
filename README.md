@@ -8,7 +8,7 @@ The TB-BMP is a modification of [iBDD-SR](https://ieeexplore.ieee.org/abstract/d
 <img width="1000px" src="figures/TB_BMP.png">
 </p>
 
-The above figure shows the block diagram of TB-BMP at half-iteration $\ell$. Here, $w^{(\ell)}$ and $\beta^{(\ell-1)}w^{(\ell)}$ are scaling factors which can be obtained via density evolution (DE) of TB-BMP, $L$ is the value of log-likehood ratio (LLR), and the soft reliability $u^{(\ell)}$ is given as $$u^{(\ell)} = w^{(\ell)} \bar{u}^{(\ell)} + \beta^{(\ell-1)}w^{(\ell)}B^{(\ell-1)} + L.$$ 
+The above figure shows the block diagram of TB-BMP at half-iteration $\ell$. Here, $w^{(\ell)}$ and $\beta^{(\ell-1)}w^{(\ell)}$ are scaling factors which can be obtained via density evolution (DE) of TB-BMP, $L$ is the channel output of log-likehood ratio (LLR), and the soft reliability $u^{(\ell)}$ is given as $$u^{(\ell)} = w^{(\ell)} \bar{u}^{(\ell)} + \beta^{(\ell-1)}w^{(\ell)}B^{(\ell-1)} + L.$$ 
 
 ### TB-BMP-1
 The value of $B^{(\ell)}$ is a function of the value of $u^{(\ell)}$, the BDD output $\bar{u}^{(\ell)}$, and the flipping threshold $T$. 
@@ -45,12 +45,12 @@ $$\beta^{(\ell)} = \frac{P( -T < u^{(\ell)} < 0 )}{ P( u^{(\ell)} < T ) }.$$
 The values of $\beta^{(\ell)}$ are obtained during the process of DE.
 
 ### Parameters of $w^{(\ell)}$ and $\beta^{(\ell)}$ for different PCs
-In the following simulations, the parameters $w^{(\ell)}$ and $\beta^{(\ell)}$ for both TB-BMP-1 and TB-BMP-2 are selected via the DE of TB-BMP-2. Furthermore, both TB-BMP-1 and TB-BMP-2 are executed for the first 10 iterations and iBDD are then executed for the last 2 iterations. These parameters are obtained by **setting the target BER $=10^{-7}$** after 20 half-iterations for DE.
+In the following simulations, the parameters $w^{(\ell)}$ and $\beta^{(\ell)}$ for both TB-BMP-1 and TB-BMP-2 are selected via the DE of TB-BMP-2. Furthermore, both TB-BMP-1 and TB-BMP-2 are executed for the first 10 iterations and iBDD are then executed for the last 2 iterations. These parameters are obtained by **setting the target BER $=10^{-7}$** for 20 half-iterations of DE.
 
-For IMP, the DE analysis provide a guideline to select parameters $w^{(\ell)}$ and $\beta^{(\ell)}$ according to the optimal $T_{\mathrm{IMP}}$ obtained via Monte-Carlo simulations. We only consider performances of IMP-based TB-BMP-1 with the optimal $T_{\mathrm{opt}}^{(1)}$ and IMP-based TB-BMP-2 with the optimal $T_{\mathrm{opt}}^{(2)}$, where parameters $w^{(\ell)}$ and $\beta^{(\ell)}$ are selected according to $T_{\mathrm{opt}}^{(1)}$ and $T_{\mathrm{opt}}^{(2)}$.
+For IMP, the DE analysis provide a guideline to select parameters $w^{(\ell)}$ and $\beta^{(\ell)}$ according to the optimal $T_{\mathrm{IMP}}$ obtained via Monte-Carlo simulations. We only consider performances of IMP-based TB-BMP-1 with the optimal $T_{\mathrm{opt}}^{(1)}$ and IMP-based TB-BMP-2 with the optimal $T_{\mathrm{opt}}^{(2)}$.
 
 #### The PC with (255,231,3) BCH code
-We first present the below figure the simulation results of both TB-BMP-1 and TB-BMP-2 with $T_{\mathrm{opt}}^{(1)} = T_{\mathrm{opt}}^{(2)} = 2.8$ for the PC based on (255,231,3) BCH code. 
+We first present the below figure to show the simulation results of both TB-BMP-1 and TB-BMP-2 with $T_{\mathrm{opt}}^{(1)} = T_{\mathrm{opt}}^{(2)} = 2.8$ for the PC based on the (255,231,3) BCH code. 
 <p align="center">
 <img width="600px" src="figures/sim_255.png">
 </p>
@@ -63,7 +63,7 @@ For iBDD-SR, we have
 - $w^{(0 \to 19)}=$ 3.09 3.15 3.54 3.59 3.68 3.72 3.77 3.81 3.85 3.90 3.95 4.01 4.08 4.17 4.31 4.52 4.90 5.65 7.29 10.58
 
 #### The PC with (511,484,3) BCH code
-We further present the below figure the simulation results of TB-BMP-1 with $T_{\mathrm{opt}}^{(1)} = 3.0$ and TB-BMP-2 with $T_{\mathrm{opt}}^{(2)} = 3.4$ for the PC based on (511,484,3) BCH code. 
+We further present the below figure to show the simulation results of TB-BMP-1 with $T_{\mathrm{opt}}^{(1)} = 3.0$ and TB-BMP-2 with $T_{\mathrm{opt}}^{(2)} = 3.4$ for the PC based on the (511,484,3) BCH code. 
 <p align="center">
 <img width="600px" src="figures/sim_511.png">
 </p>
@@ -80,7 +80,7 @@ For iBDD-SR, we have
 - $w^{(0 \to 19)}=$ 4.05 4.20 4.29 4.35 4.40 4.45 4.49 4.53 4.57 4.62 4.67 4.73 4.81 4.91 5.07 5.31 5.76 6.71 8.75 11.95
 
 #### The PC with (255,239,2) BCH code
-We further present the below figure the simulation results of TB-BMP-1 with $T_{\mathrm{opt}}^{(1)} = 5.2$ and TB-BMP-2 with $T_{\mathrm{opt}}^{(2)} = 4.2$ for the PC based on (255,239,2) BCH code. 
+We further present the below figure to show the simulation results of TB-BMP-1 with $T_{\mathrm{opt}}^{(1)} = 5.2$ and TB-BMP-2 with $T_{\mathrm{opt}}^{(2)} = 4.2$ for the PC based on the (255,239,2) BCH code. 
 <p align="center">
 <img width="600px" src="figures/sim_255t2.png">
 </p>
@@ -97,7 +97,7 @@ For iBDD-SR, we have
 - $w^{(0 \to 19)}=$ 4.10 4.52 4.99 5.62 6.50 7.56 8.55 9.37 10.03 10.57 11.03 11.43 11.78 12.09 12.37 12.62 12.86 13.07 13.28 13.47
 
 #### The PC with (256,239,2) BCH code
-We finally present the below figure the simulation results of both TB-BMP-1 and TB-BMP-2 with $T_{\mathrm{opt}}^{(1)} = T_{\mathrm{opt}}^{(2)} = 3.0$ for the PC based on (256,239,2) extended BCH code. In this case, the component code is an extended BCH code whose the weight enumerator is different from that of component code without extended bit. For simplicity, parameters of both TB-BMP-1 and TB-BMP-2 are selected based on the DE of EMP-based TB-BMP-2 with (255,239,2) BCH code.
+We finally present the below figure to show the simulation results of both TB-BMP-1 and TB-BMP-2 with $T_{\mathrm{opt}}^{(1)} = T_{\mathrm{opt}}^{(2)} = 3.0$ for the PC based on the (256,239,2) extended BCH code. In this case, the component code is an extended BCH code whose weight enumerator is different from that of component code without extending. For simplicity, parameters of both TB-BMP-1 and TB-BMP-2 are selected based on the DE of EMP-based TB-BMP-2 with the (255,239,2) BCH code.
 <p align="center">
 <img width="600px" src="figures/sim_256.png">
 </p>
@@ -113,4 +113,4 @@ For iBDD-SR, we have
 The codes in this repository are under the MIT license as specified by the LICENSE file.
 
 ## Notes
-The work on TB-BMP has been submitted to IEEE Transactions on Communications and is in "under review" status. If you are interested in this work, please contact me at zhaoxw9@mail2.sysu.edu.cn.
+The work on TB-BMP has been submitted to IEEE Transactions on Communications and is in "under review" status. If you are interested in this work and have any questions or suggestions, please contact me at zhaoxw9@mail2.sysu.edu.cn.
