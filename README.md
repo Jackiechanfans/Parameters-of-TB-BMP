@@ -65,7 +65,7 @@ For iBDD-SR, we have
 #### The PC with (511,484,3) BCH code
 We further present the below figure to show the simulation results of TB-BMP-1 with $T_{\mathrm{opt}}^{(1)} = 3.0$ and TB-BMP-2 with $T_{\mathrm{opt}}^{(2)} = 3.4$ for the PC based on the (511,484,3) BCH code. 
 <p align="center">
-<img width="600px" src="figures/sim_511.png">
+<img width="600px" src="figures/sim_511_revised_ver.png">
 </p>
 
 For $T_{\mathrm{opt}}^{(1)} = 3.0$, we have
